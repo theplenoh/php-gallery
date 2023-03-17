@@ -14,3 +14,6 @@ CREATE TABLE gallery (
     PRIMARY KEY (postID)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
+
+## License Information
+This repository is licensed under GPL v2.
