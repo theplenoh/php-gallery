@@ -1,6 +1,7 @@
 # php-gallery
 
 ## SQL Table(s)
+```
 CREATE TABLE gallery (
     postID int(11) unsigned NOT NULL AUTO_INCREMENT, 
     name varchar(20) NOT NULL, 
@@ -10,3 +11,4 @@ CREATE TABLE gallery (
     pic varchar(30) NOT NULL, 
     PRIMARY
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+```
