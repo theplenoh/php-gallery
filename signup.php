@@ -41,6 +41,7 @@ function verify(form) {
         }
         form.submit();
     }
+
     function checkPassword(form) {
         // 비밀번호 확인
         // alert(event.keyCode); // 어떤 키보드가 눌렸는지 확인할 때 사용함
@@ -62,7 +63,6 @@ function verify(form) {
             }
         }
     }
-
     function checkDuplicate() {
         // 아이디 중복확인
 
@@ -116,7 +116,16 @@ function verify(form) {
     <dd>
         <input type="password" name="password_confirm" onkeyup="checkPassword(this.form);">
     </dd>
+
+    <dt>이름<mark>*</mark></dt>
+    <dd>
+        <input type="text" name="name" onkeyup="checkPassword(this.form);">
+    </dd>
 </dl>
+<p class="buttons">
+    <input type="button" onclick="verify(this.form);" value="확인">
+    <input type="button" onclick="history.go(-1)" value="뒤로">
+</p>
 </form>
 </body>
 </html>
